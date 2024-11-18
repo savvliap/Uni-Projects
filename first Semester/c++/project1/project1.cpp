@@ -25,7 +25,7 @@ void showSuitabilityForTask (char sex, bool ninja)
 	else if (sex=='m' && ninja ==false) cout<<"Suitable for field battle";
 	else if(sex=='f' && ninja==true) cout<<"Suitable for infiltration";
 	else if (sex=='f' && ninja==false) cout<<"Suitable for diplomacy";
-	else if (sex != 'f' && sex != 'm') cout<< "Char not accepted. Accepted are only the values ‘m’ for male and ‘f’ for female."; 	
+	else if (sex != 'f' && sex != 'm') cout<< "Char not accepted. Accepted are only the values â€˜mâ€™ for male and â€˜fâ€™ for female."; 	
 }
 
 bool showExperiencedSamurai(Samurai samurai)
