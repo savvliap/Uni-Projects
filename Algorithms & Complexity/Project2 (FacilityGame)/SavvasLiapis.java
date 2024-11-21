@@ -7,8 +7,8 @@ public class SavvasLiapis extends FPlayer {
 	static String version = "1.0";
 	// Give your personal information in Greek
 	static int afm = 57403; // AFM should be in form 5XXXX
-	static String firstname = "Σάββας";
-	static String lastname = "Λιάπης";
+	static String firstname = "Savvas";
+	static String lastname = "Liapis";
 
 	// Member variables
 	int n; // Number of nodes in the graph
