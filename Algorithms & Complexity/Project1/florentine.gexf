@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2020-04-09">
+    <creator>NetworkX 2.4</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <nodes>
+      <node id="Acciaiuoli" label="Acciaiuoli" />
+      <node id="Medici" label="Medici" />
+      <node id="Castellani" label="Castellani" />
+      <node id="Peruzzi" label="Peruzzi" />
+      <node id="Strozzi" label="Strozzi" />
+      <node id="Barbadori" label="Barbadori" />
+      <node id="Ridolfi" label="Ridolfi" />
+      <node id="Tornabuoni" label="Tornabuoni" />
+      <node id="Albizzi" label="Albizzi" />
+      <node id="Salviati" label="Salviati" />
+      <node id="Pazzi" label="Pazzi" />
+      <node id="Bischeri" label="Bischeri" />
+      <node id="Guadagni" label="Guadagni" />
+      <node id="Ginori" label="Ginori" />
+      <node id="Lamberteschi" label="Lamberteschi" />
+    </nodes>
+    <edges>
+      <edge id="0" source="Acciaiuoli" target="Medici" />
+      <edge id="1" source="Medici" target="Barbadori" />
+      <edge id="2" source="Medici" target="Ridolfi" />
+      <edge id="3" source="Medici" target="Tornabuoni" />
+      <edge id="4" source="Medici" target="Albizzi" />
+      <edge id="5" source="Medici" target="Salviati" />
+      <edge id="6" source="Castellani" target="Peruzzi" />
+      <edge id="7" source="Castellani" target="Strozzi" />
+      <edge id="8" source="Castellani" target="Barbadori" />
+      <edge id="9" source="Peruzzi" target="Strozzi" />
+      <edge id="10" source="Peruzzi" target="Bischeri" />
+      <edge id="11" source="Strozzi" target="Ridolfi" />
+      <edge id="12" source="Strozzi" target="Bischeri" />
+      <edge id="13" source="Ridolfi" target="Tornabuoni" />
+      <edge id="14" source="Tornabuoni" target="Guadagni" />
+      <edge id="15" source="Albizzi" target="Ginori" />
+      <edge id="16" source="Albizzi" target="Guadagni" />
+      <edge id="17" source="Salviati" target="Pazzi" />
+      <edge id="18" source="Bischeri" target="Guadagni" />
+      <edge id="19" source="Guadagni" target="Lamberteschi" />
+    </edges>
+  </graph>
+</gexf>
