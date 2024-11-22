@@ -1,0 +1,28 @@
+module rr_arbiter_buggy(
+
+input logic rst_i,
+input logic clk,
+input logic reqs_i,
+output logic cnt_o);
+
+logic wire_q_o;
+logic wire_any_grant_o;
+logic wire_grants_o;
+
+module priority_reg( 
+.clk(clk), 
+.rst(rst), 
+.d_i(wire_grants_o), 
+.en_i(wire_any_grant_out),
+.q_o(wire_q_o));
+
+module arbiter(
+.reqs_i(reqs_i),
+.lowp_i(wire_q_o),
+.grants_o(wire_grants_o),
+.cnt_o(cnt_o),
+.any_grant_o(wire_anygrant_o)
+);
+endmodule
+
+endmodule 
