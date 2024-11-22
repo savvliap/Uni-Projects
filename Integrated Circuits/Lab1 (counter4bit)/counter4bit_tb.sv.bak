@@ -1,0 +1,45 @@
+module counter4bit_tb;
+
+logic clk;
+logic reset;
+logic satEn;
+logic [3:0]counterout;
+
+always begin // dimiourgw to roloi 
+ clk= 1;
+ #5ns;
+ clk= 0;
+ #5ns;
+end
+
+counter4bit
+ countername(clk, reset, satEn, counterout);
+ initial begin
+ $display("starting testbench"); //ksekinaei 
+ satEn<= 0;                      //vazw times sta sat enable kai reset 
+ reset<= 0;
+ @(posedge clk);
+ reset<= 1;
+ @(posedge clk);
+ reset<= 0;                      //me tin thetiki akmi reset=0 kai dokimazw satEn=1
+ satEn<= 1;
+ repeat(13)begin                 //otan satEn=1 mex11                     
+ @(posedge clk);                 //na paei 0 se kapoia apo tis teleutaies  
+  $strobe("@%0t:counterout->%b", $time, counterout); //dixnei eksodous 
+ end
+ satEn<= 0;                      //dokimazw i tha ginei gia satEn=0 kanonika thelw na ftasei sto 16 kai meta telos 
+ repeat (17) begin 
+  @(posedge clk);
+  $strobe("@%0t:counterout->%b", $time, counterout);
+ end
+ 
+ repeat(2)
+  @(posedge clk);
+  reset<= 1;
+  @(posedge clk);
+  reset <= 1;
+  repeat(3) @(posedge clk);
+  $display("Finished");
+ end
+
+endmodule
