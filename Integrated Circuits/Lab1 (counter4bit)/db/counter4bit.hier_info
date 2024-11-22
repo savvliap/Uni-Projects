@@ -1,0 +1,17 @@
+|counter4bit
+clk => countout[0]~reg0.CLK
+clk => countout[1]~reg0.CLK
+clk => countout[2]~reg0.CLK
+clk => countout[3]~reg0.CLK
+reset => countout[0]~reg0.ACLR
+reset => countout[1]~reg0.ACLR
+reset => countout[2]~reg0.ACLR
+reset => countout[3]~reg0.ACLR
+reset => countout[3].IN0
+satEn => countout[3].IN1
+countout[0] <= countout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[1] <= countout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[2] <= countout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+countout[3] <= countout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
