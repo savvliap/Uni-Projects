@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at rr_arbiter_buggy.sv(10): always construct contains both blocking and non-blocking assignments
